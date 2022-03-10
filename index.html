@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopeeF8</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap&subsetvietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <!-- Main -->
+    <div id="main">
+        <header class="header">
+           <div class="grid wide">
+                <nav class="header__navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__list-item  navbar__list-item--separate">
+                            Mở ShopeeF8 trên điện thoại
+                            <div class="navbar__qr">
+                                <img class="navbar__qr-img" src="./assets/img/header/Nav-qr/qrCode.png" alt="QR Code">
+                                <div class="navbar__apps">
+                                    <a href="" class="apps__img">
+                                        <img src="./assets/img/header/Nav-qr/ggPlay.png" alt="" class="apps__img-link">
+                                    </a>
+                                    <a href="" class="apps__img">
+                                        <img src="./assets/img/header/Nav-qr/appStore.png" alt="" class="apps__img-link">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar__list-item navbar--disable">
+                            Kết nối với chúng tôi
+                            <a class="navbar__icon-link" href="">
+                                <i class="navbar__icon fa-brands fa-facebook"></i>
+                            </a>
+                            <a class="navbar__icon-link" href="">
+                                <i class="navbar__icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar__list">
+                        <li class="navbar__list-item navbar__list-item--notify">
+                            <a href="#" class="navbar__link">
+                                <i class="navbar__icon fa-solid fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="navbar__notify">
+                                <header class="notify__header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="notify__container">
+                                    <li class="notify__list notify__list--viewed">
+                                        <a href="" class="notify__link">
+                                            <img src="./assets/img/header/Nav-list/Depdethuong.png" alt="" class="notify__list-img">
+                                            <div class="notify__list-items">
+                                                <p>Dép lê nam nữ unisex</p>
+                                                <p>Dép quai gián cao cấp quai ngang nam nữ thời trang</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notify__list notify__list--viewed">
+                                        <a href="" class="notify__link">
+                                            <img src="./assets/img/header/Nav-list/AothunUnisex.jpg" alt="" class="notify__list-img">
+                                            <div class="notify__list-items">
+                                                <p>Áo thun nam nữ tay lỡ Unisex</p>
+                                                <p>Áo phông nữ nam Form Rộng chất Cotton phong cách Oversize A40</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notify__list">
+                                        <a href="" class="notify__link">
+                                            <img src="./assets/img/header/Nav-list/Giay-Louis-vuiton.jpg" alt="" class="notify__list-img">
+                                            <div class="notify__list-items">
+                                                <p>Giày Sneaker</p>
+                                                <p>Giày Sneaker Louis Vuitton Sơn Tùng MTP LKM500</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="notify__footer">
+                                    <a href="" class="notify__footer-link">Xem thêm</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="#" class="navbar__link">
+                                <i class="navbar__icon fa-thin fa-question"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li class="navbar__list-item  navbar__list-item--separate navbar__list-item--bold">Đăng nhập</li>
+                        <li class="navbar__list-item navbar__list-item--bold js__register-form">Đăng ký</li>
+                    </ul>
+                </nav>
+           </div>
+        </header>
+        <div class="container">
+            <div class="slider">
+
+            </div>
+            <div class="content">
+
+            </div>
+        </div>
+        <footer class="footer">
+
+        </footer>
+    </div>
+    <!-- End Main -->
+    <!-- Modal -->
+    <div class="modal js__modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <!-- Authen form -->
+            <!-- Register -->
+            <div class="auth-form  js__auth-form">
+                <div class="auth-form__container">
+                    <header class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </header>
+    
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <label for="authEmail">Email</label>
+                            <input autocomplete="off" type="email" id="authEmail" placeholder="Nhập địa chỉ email của bạn"/>
+                    </div>
+                    <div class="auth-form__group">
+                            <label for="authPass">Password</label>
+                            <input autocomplete="off" type="password" id="authPass" placeholder="Nhập mật khẩu của bạn"/>
+                        </div>
+                    </div>
+                    <div class="auth-form__group">
+                        <label for="authPass2">Confirm Password</label>
+                        <input autocomplete="off" type="password" id="authPass2" placeholder="Vui lòng nhập lại mật khẩu của bạn"/>
+                    </div>
+    
+                    <div class="auth-form_aside">
+                        <p class="auth-form_policy-text">
+                        Bằng việc đăng kí, bạn đã đồng ý với ShopeeF8 về
+                            <a href="" class="auth-form__policy-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-form__policy-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+    
+                    <div class="auth-form__controls">
+                        <button class="btn mr-8 btn--hover js__modal-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+                
+                <footer class="auth-form__footer">
+                    <a href="" class="btn btn--size-min btn--with-icon auth-form__footer-fb">
+                        <i class="auth-form__footer-ic fab fa-facebook-square"></i>
+                        <span class="auth-form__footer-desc">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="btn btn--size-min btn--with-icon auth-form__footer-gg">
+                        <i style="color: #FB9086;" class="auth-form__footer-ic fab fa-google"></i>
+                        <span class="auth-form__footer-desc">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </footer>
+            </div>
+            <!-- End Register -->
+            <!-- Login -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <header class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng ký</span>
+                    </header>
+    
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <label for="authEmail">Email</label>
+                            <input autocomplete="off" type="email" id="authEmail" placeholder="Nhập địa chỉ email của bạn"/>
+                    </div>
+                    <div class="auth-form__group">
+                            <label for="authPass">Password</label>
+                            <input autocomplete="off" type="password" id="authPass" placeholder="Nhập mật khẩu của bạn"/>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__helps">
+                        <a href="" style="color: #ee4d2d;" class="auth-form__helps-link">Quên mật khẩu</a>
+                        <span class="auth-form__helps-separate"></span>
+                        <a href="" class="auth-form__helps-link">Cần trợ giúp?</a>
+                    </div>
+    
+                    <div class="auth-form__controls">
+                        <button class="btn mr-8 btn--hover">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+                
+                <footer class="auth-form__footer">
+                    <a href="" class="btn btn--size-min btn--with-icon auth-form__footer-fb">
+                        <i class="auth-form__footer-ic fab fa-facebook-square"></i>
+                        <span class="auth-form__footer-desc">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="btn btn--size-min btn--with-icon auth-form__footer-gg">
+                        <i style="color: #FB9086;" class="auth-form__footer-ic fab fa-google"></i>
+                        <span class="auth-form__footer-desc">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </footer>
+            </div> -->
+            <!-- End Login -->
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Script -->
+    <script src="./assets/js/main.js"></script>
+    <!-- End Script -->
+</body>
+</html>
