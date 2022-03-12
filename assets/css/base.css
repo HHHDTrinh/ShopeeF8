@@ -4,7 +4,14 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
-    --border-color: #d5d5d5;
+    --border-color: #dbddbd;
+    --hover-color: #fafafa;
+    --star-gold-color: #ffce3e;
+
+    --header-height: 12rem;
+    --navbar-height: 4.35rem;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+    --header-sort-bar-height: 46px;
 }
 
 *{
@@ -29,6 +36,17 @@ html{
     }
     to{
         opacity: 1;
+    }
+}
+
+@keyframes headerGrow {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
@@ -82,7 +100,7 @@ html{
     outline: none;
     color: var(--text-color);
     height: 3.4rem;
-    width: 14.2rem;
+    width: 12.4rem;
     border-radius: 2px;
     font-size: 1.4rem;
     padding: 0 12px;
@@ -107,4 +125,92 @@ html{
     color:#949494;
     cursor: default;
     background-color:#c3c3c3;
+}
+
+
+/* Selection */
+.select-input {
+    position: relative;
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-input:hover .select-input__list {
+    display: block;
+}
+
+.select-input__label {
+    font-size: 1.4rem;
+}
+
+.select-input__icon {
+    font-size: 1.4rem;
+    color: rgb(131, 131, 131);
+    position: relative;
+    top: 1px;
+}
+
+.select-input__list {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    left: 0;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: 8px 16px;
+    list-style: none;
+    display: none;
+    z-index: 1;
+}
+
+.select-input__link {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
+}
+
+/* Panigation */
+.panigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.panigation-item {
+    margin: 0 12px;
+}
+
+.panigation-item--active .panigation-item__link {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.panigation-item--active .panigation-item__link:hover {
+    filter: contrast(90%);
+}
+
+.panigation-item__link {
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #939393;
+    min-width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: var(--height);
 }
